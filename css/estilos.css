@@ -30,27 +30,54 @@ body {
      grid-area: Daniel;
      padding: 5px;
      color: hsl(0, 0%, 100%);
+     float: left;
 }
 .Jonathan {
     background-color: hsl(217, 19%, 35%);
     grid-area: Jonathan;
     color: hsl(0, 0%, 100%);
+    float: left;
 }
 .Kira {
   background-color: hsl(0, 0%, 100%);
  grid-area: Kira;
+ float: left;
 }
 .Jenathe {
     background-color: hsl(0, 0%, 100%);
     grid-area: Jenathe;
+    float: left;
 }
 .Patrick {
     background-color: hsl(219, 29%, 14%);
     grid-area: Patrick;
     color: hsl(0, 0%, 100%);
+    float: left;
+}
+.image-person {
+    border-radius: 50%;
 }
 .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
 .rewiev-paragraphs {
     opacity: 50%;
+}
+@media screen and (max-width: 344px) {
+    .testimonials {
+        height: auto;
+        grid-template-columns: 90vw;
+        grid-template-rows: repeat(10, 200px);
+        grid-template-areas: "."
+        "Daniel"
+        "Daniel"
+        "Jonathan"
+        "Jenathe"
+        "Patrick"
+        "Patrick"
+        "Kira"
+        "Kira"
+        ".";
+
+    }
+
 }
