@@ -1,2 +1,56 @@
 body {
-    background-color: hsl(210, 46%, 95%)
+    background-color: hsl(210, 46%, 95%);
+    font-size: 13px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 500, 600;
+}
+
+.testimonials {
+    display: grid;
+    height: 100vh;
+  grid-template-columns: repeat(10, 10%);
+  grid-template-rows: repeat(8, 12.5%);
+  gap: 10px;
+  grid-template-areas: ". . . . . . . . . ."
+  ". Daniel Daniel Daniel Daniel Jonathan Jonathan Kira Kira ."
+  ". Daniel Daniel Daniel Daniel Jonathan Jonathan Kira Kira ."
+  ". Daniel Daniel Daniel Daniel Jonathan Jonathan Kira Kira ."
+  ". Jenathe Jenathe Patrick Patrick Patrick Patrick Kira Kira ."
+  ". Jenathe Jenathe Patrick Patrick Patrick Patrick Kira Kira ."
+  ". Jenathe Jenathe Patrick Patrick Patrick Patrick Kira Kira ."
+  ". . . . . . . . . .";
+}
+
+.div-testimonials {
+    border: 1px solid transparent;
+    border-radius: 5%;
+}
+.Daniel {
+     background-color: hsl(263, 55%, 52%);
+     grid-area: Daniel;
+     padding: 5px;
+     color: hsl(0, 0%, 100%);
+}
+.Jonathan {
+    background-color: hsl(217, 19%, 35%);
+    grid-area: Jonathan;
+    color: hsl(0, 0%, 100%);
+}
+.Kira {
+  background-color: hsl(0, 0%, 100%);
+ grid-area: Kira;
+}
+.Jenathe {
+    background-color: hsl(0, 0%, 100%);
+    grid-area: Jenathe;
+}
+.Patrick {
+    background-color: hsl(219, 29%, 14%);
+    grid-area: Patrick;
+    color: hsl(0, 0%, 100%);
+}
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+.rewiev-paragraphs {
+    opacity: 50%;
+}
